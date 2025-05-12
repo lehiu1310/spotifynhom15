@@ -1,1 +1,9 @@
 từ từ rồi tạo 
+# Bước 1: Thêm các thay đổi vào khu vực staging
+git add .
+
+# Bước 2: Tạo commit mới với thông điệp
+git commit -m "Thêm tính năng phát nhạc"
+
+# Bước 3: Đẩy commit lên GitHub (nếu cần)
+git push origin main
