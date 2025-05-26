@@ -1,2 +1,35 @@
-từ từ 
-ng ta phải tính chứ
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spotify Clone</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Spotify 🎵</h2>
+    <ul>
+      <li>🏠 Trang chủ</li>
+      <li>🔍 Tìm kiếm</li>
+      <li>📁 Thư viện</li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <div class="header">
+      <h1>Danh sách phát</h1>
+    </div>
+
+    <div class="playlist" id="playlist">
+      <!-- JS sẽ thêm bài hát vào đây -->
+    </div>
+  </div>
+
+  <div class="footer" id="player">
+    <p id="now-playing">🎵 Đang phát: Không có bài hát</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
