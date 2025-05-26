@@ -1,2 +1,31 @@
-hoàn thành
-lll
+// === Kiểm tra số lượng bài hát ===
+console.log("🔍 Kiểm tra số lượng bài hát...");
+if (songs.length === document.querySelectorAll('.card').length) {
+  console.log("✅ Số lượng bài hát hiển thị đúng:", songs.length);
+} else {
+  console.error("❌ Sai số lượng bài hát!");
+}
+
+// === Kiểm tra sự kiện click có hoạt động ===
+console.log("🔍 Kiểm tra sự kiện click...");
+const testCard = document.querySelector('.card');
+if (testCard) {
+  testCard.click();
+  const playingText = document.getElementById('now-playing').textContent;
+  if (playingText.includes("Đang phát")) {
+    console.log("✅ Click bài hát hoạt động:", playingText);
+  } else {
+    console.error("❌ Click không cập nhật trạng thái đang phát.");
+  }
+}
+
+// === Kiểm tra hình ảnh load thành công ===
+console.log("🔍 Kiểm tra hình ảnh...");
+document.querySelectorAll('.card img').forEach((img, index) => {
+  img.onerror = () => {
+    console.error(`❌ Ảnh không tải được: ${songs[index].title}`);
+  };
+  img.onload = () => {
+    console.log(`✅ Ảnh OK: ${songs[index].title}`);
+  };
+});
