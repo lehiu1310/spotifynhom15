@@ -42,3 +42,7 @@ npm install
 
 # Chạy project
 npm run dev
+👨‍💻 Nhóm phát triển
+- Nguyen Huu Le Hieu
+- Le Kha Hoang
+- Pham Van Huan
